@@ -1,0 +1,220 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+body{
+    background-image:url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png");
+    background-size:100%;
+    background-repeat:no-repeat;
+    padding:0;
+    margin:0;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    font-family: 'Fredoka One', cursive;
+   
+}
+.eyes{
+display:flex;
+justify-content: space-around;
+
+}
+
+
+.eye1{
+    background-color:white;
+    border-radius:50px;
+    width:55px;
+    height:55px;
+	box-shadow: -20px 15px 50px indigo;
+    border:1.9px solid #000000;
+    transition:2s;
+	
+}
+.eye2{
+    background-color:white;
+    border-radius:50px;
+    width:55px;
+    height:55px;
+	box-shadow: 40px 15px 50px indigo;
+    border:1.9px solid #000000;
+    transition:2s;
+}
+.eye1:hover{
+   border-radius: 40px 40px 0px 0px;
+    
+    height:40px;
+
+}
+
+.eye2:hover{
+    border-radius: 40px 40px 0px 0px;
+     
+     height:40px;
+ 
+ }
+.boias{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.boli1{
+    width:25px;
+    height:25px;
+    background-color:black;
+    border-radius:50px;
+    text-align:center;
+    position:relative;
+  top:40px;
+	transition:5s;
+	
+
+}
+.boli2 {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50px;
+  float: none;
+  position:relative;
+  top:40px;
+  transition:5s;
+  animation: girar360 2s linear infinite;
+}
+.boli1:hover {
+  animation: girar360 15s linear infinite;
+ 
+}
+.boli2:hover {
+  animation: girar360 2s linear infinite;
+}
+
+
+@keyframes girar360 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+	
+	
+#calculator .boca{
+	position:absolute;
+	 width: 50px;
+  height: 50px;
+  background: #3d1117;
+  border-radius: 5px 20px 100px 100px;
+  top: 110px;
+  right:640px;
+  margin: 0 auto;
+  display:block;
+  transition:1s;
+  opacity: 0;
+ 
+}
+
+#calculator .boca:hover{
+    height:20px;
+    top: 120px;
+
+}
+
+#calculator .ling{
+    opacity: 0;
+	  width: 49px;
+  height: 39px;
+  background: #e8808d;
+  position: absolute;
+  top:131px;
+  right:640px;
+  border-radius: 0 0 28px 28px;
+  transition:1s;
+}
+
+
+#calculator .ling:hover{
+    height:20px;
+    top: 120px;
+
+}
+
+a{
+    color:white;
+}
+
+
+/*Style of Calculator Here*/
+
+#calculator{
+    background-color:#6959CD;
+    max-width:360px;
+    border-radius:30px;
+    padding:20px;
+	border:2px solid #000000;
+    box-shadow: 0 20px 40px #483D8B;
+    
+
+}
+
+#display{
+    border-radius:20px;
+	border:1px solid #000000;
+width: 100%;
+height:45px;
+margin-bottom:10px;
+text-align: right;
+padding:15px;
+font-size:22px;
+color:purple;
+background-color:#ffae00be;
+box-sizing:border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+button{
+    width:calc(25% - 10px);
+    height: 50px;
+    font-size:20px;
+    margin: 10px 5px;
+    border:none;
+    float: left;
+    color:white;
+    border-radius:50px;
+    background-color:#6959CD;
+    box-shadow:0 20px 39px #020230;
+	border:1px solid #000000;
+    transition:.5s; 
+}
+
+.operator{
+    background-color:#483D8B;
+}
+
+#ac{
+    background-color:rgb(121, 7, 136);
+}
+
+.equal{
+    width:calc(50% - 10px);
+}
+
+button:hover{
+    cursor:pointer;
+    
+}
+
+button:active{
+    transform:scale(1.1);
+}
+
+footer{
+    width:100%;
+    background-image:url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105__480.png");
+    font-size:30px;
+    color:white;
+
+}
